@@ -59,6 +59,7 @@
 .nav {
 	color: darkolivegreen;
 	max-width: 960px;
+	display:flex;
 	background-color: darkseagreen;
 	margin: 0 auto;
 	text-decoration: none;
