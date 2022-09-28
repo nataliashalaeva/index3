@@ -48,6 +48,7 @@
 }
 
 #menu {
+	display:flex;
 	color: darkslateblue;
 	max-width: 960px;
 	background-color: darkseagreen;
@@ -84,6 +85,7 @@ tr:nth-child(odd) {
 #footer {
 	background-color: bisque;
 	position: fixed;
+	display:flex;
 	left: 0;
 	bottom: 0;
 	padding: 0px 0px 0px 10px;
