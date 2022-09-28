@@ -26,6 +26,9 @@
     #header {
       flex-direction: row;
     }
+	  #menu a{
+		flex-direction: row;  
+	  }
   }
 
 .picture {
@@ -37,18 +40,18 @@
 }
 
 #menu li {
-	display: inline-block;
+	display:flex;
 }
 
 #menu a {
-	display: block;
+	display:flex;
+	 flex-direction: column;
 	padding: 5px 15px;
 	color: #fff;
 	text-decoration: none;
 }
 
 #menu {
-	display:flex;
 	color: darkslateblue;
 	max-width: 960px;
 	background-color: darkseagreen;
