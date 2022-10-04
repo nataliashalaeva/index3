@@ -3,80 +3,101 @@
 }
 
 #header {
-    display: flex;
-    flex-direction: column;
-  }
-  #header main, #header aside {
-    font-size: large;
-    color:teal;
-    background-color:darkkhaki;
-    padding:20px;
-    margin: 10px;
-  }
-  #header aside {
-    flex: 1;
-    order: 1;
-  }
-  #header main {
-    flex: 3;
-    order: 2;
-  }
-  
-  @media screen and (min-width: 800px) {
-    #header {
-      flex-direction: row;
-    }
-	  #menu {
-		flex-direction: row;  
-	  }
-  }
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 
-.picture {
-	padding: 10px 10px 10px 225px;
-	float: left;
-	margin-right: 10px;
-	width: 120px;
-	height: 120px;
 }
 
-#menu li {
-	display:flex;
+#header main,
+#header aside {
+	font-size: large;
+	color: teal;
+	background-color: darkkhaki;
+	padding: 20px;
+	margin: 10px;
 }
 
-#menu a {
-	display:flex;
-	 
-	padding: 5px 15px;
-	color: #fff;
+#header aside {
+	flex: 2;
+	order: 1;
+}
+
+#header main {
+	flex: 5;
+	order: 2;
+}
+
+@media screen and (max-width:800px) {
+
+	.menu {
+		flex-direction: column;
+	}
+
+	.content form {
+		flex: 1;
+		order: 1;
+	}
+
+	.content table {
+		flex: 1;
+		order: 2;
+		width: 100%;
+	}
+
+
+}
+
+
+a {
+	padding: 20px;
 	text-decoration: none;
+	color: saddlebrown;
 }
 
-#menu {
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	color: darkslateblue;
-	max-width: 960px;
-	background-color: darkseagreen;
-	margin: 0 auto;
-	margin-top: 20px;
-	padding: 10px;
+.menu {
+	display: flex;
 }
 
 .nav {
-	color: darkolivegreen;
-	max-width: 960px;
-	display:flex;
-	background-color: darkseagreen;
-	margin: 0 auto;
-	text-decoration: none;
-	margin-top: 20px;
+	display: flex;
 	padding: 10px;
+	width: 960px;
+	margin: 0 auto;
+	background-color: darkseagreen;
 }
 
-.nav a {
-	text-decoration: none;
-	color: saddlebrown
+.content {
+	display: flex;
+	flex-direction: column;
+	color: darkolivegreen;
+	max-width: 960px;
+	background-color: darkseagreen;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+
+#footer {
+	background-color: bisque;
+	position: fixed;
+	display: flex;
+	left: 0;
+	bottom: 0;
+	padding: 0px 0px 0px 10px;
+	width: 100%;
+	font-size: 19px;
+	color: darkolivegreen;
+}
+
+
+.picture {
+	float: right;
+	margin-right: 10px;
+	width: 120px;
+	height: 120px;
 }
 
 tr:nth-child(even) {
@@ -85,17 +106,4 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
 	background: cadetblue;
-}
-
-
-#footer {
-	background-color: bisque;
-	position: fixed;
-	display:flex;
-	left: 0;
-	bottom: 0;
-	padding: 0px 0px 0px 10px;
-	width: 100%;
-	font-size: 19px;
-	color: darkolivegreen;
 }
